@@ -57,13 +57,24 @@ Each collaboration area has its own entry in the left navigation. Start by disco
 - Interrupted transfers support resume
 - Partial data lives in a hidden `.captain-partial` tree; after byte-count verification, the original path, filename, and extension are restored, including `.exe`, archives, media, and documents
 
+#### Screen viewing authorization
+
+- The viewed device shows a topmost prompt; no frames are sent until it is approved
+- The approval dialog has separate opt-ins for **speaker audio** and **keyboard/mouse control**, both off by default
+- If only viewing was approved, the viewer can request control later and the viewed device is asked again
+- Closing the viewer window, or using **Cancel screen viewing** in the top banner, revokes the grant immediately
+- While a screen is being viewed or broadcast, a banner stays pinned to the top of the viewed device, showing whether audio and control were granted
+
 #### Screen broadcast
 
 - A dedicated **Screen Broadcast** page with per-device selection and Select All
 - Broadcast invitations appear as a topmost desktop prompt on the receiving device
 - The receiver must explicitly choose **Accept viewing** or **Reject**
 - The broadcaster sees pending, accepted, viewing, rejected, and ended states per device
-- The broadcaster can end all viewers at any time
+- Broadcasting is one-way: viewers can watch but cannot control the broadcaster's machine
+- The broadcaster can opt to share speaker output (not the microphone); viewers can mute locally
+- Broadcast comments: the host and every viewer can post, and everyone in the session sees the same thread
+- The broadcaster can end all viewers at any time, and viewer windows close automatically
 - The receiver sees who is viewing at the top of the app and can cancel viewing with one click
 
 #### LAN chat
@@ -113,7 +124,8 @@ For keyboard/mouse, clipboard, file transfer, screen broadcast, and chat interop
 - UDP `45678`: device discovery and heartbeat
 - TCP `45679`: collaboration control, files, and chat messages
 - UDP `45679`: low-latency mouse and keyboard input
-- TCP `45680`: screen viewing and broadcast stream
+- TCP `45680`: screen viewing and broadcast video stream
+- TCP `45681`: broadcast speaker audio stream
 
 If Windows Firewall blocks discovery, allow Captain Net on private networks.
 
