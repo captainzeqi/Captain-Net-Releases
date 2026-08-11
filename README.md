@@ -1,13 +1,13 @@
 <div align="center">
-  <img src="Assets/CaptainNet.png" width="128" alt="Captain Net icon">
-  <h1>Captain Net</h1>
+  <img src="Assets/CaptainX.png" width="128" alt="Captain X icon">
+  <h1>Captain X</h1>
   <p>本地网络诊断 · 局域网协同 · Windows 便携工作台</p>
   <p><strong>中文</strong> · <a href="README.en.md">English</a></p>
 </div>
 
 <br>
 
-Captain Net 是一款面向 Windows 的本地网络诊断与局域网协同工作台：把 IP、DNS、WebRTC、代理、网络防护、跨设备键鼠、文件传输、屏幕广播和局域网聊天集中在一个桌面应用中。
+Captain X 是一款面向 Windows 的本地网络诊断与局域网协同工作台：把 IP、DNS、WebRTC、代理、网络防护、跨设备键鼠、文件传输、屏幕广播和局域网聊天集中在一个桌面应用中。
 
 检测结果、聊天记录、设备备注和历史数据默认只保存在本机，不上传网络；局域网功能仅面向用户确认过的已配对设备。
 
@@ -85,7 +85,7 @@ Captain Net 是一款面向 Windows 的本地网络诊断与局域网协同工�
 - 支持发送任意格式文件和文件夹，聊天区保留文件消息记录
 - 设备备注名仅保存在本机，不会覆盖对方设备名称
 - 每个对话可单独一键清空；清空只影响当前设备，不会删除对方记录
-- 聊天记录保存在 `%AppData%\CaptainNet\chat`，不上传公网
+- 聊天记录保存在 `%AppData%\CaptainX\chat`，不上传公网
 
 #### 局域网打印机
 
@@ -114,7 +114,7 @@ Captain Net 是一款面向 Windows 的本地网络诊断与局域网协同工�
 
 ## 隐私与安全边界
 
-- 网络诊断结果、聊天记录、设备备注、传输历史默认写入本机 `%AppData%\CaptainNet`。
+- 网络诊断结果、聊天记录、设备备注、传输历史默认写入本机 `%AppData%\CaptainX`。
 - 应用不上传检测报告，不依赖在线参考网站才能打开；联网只用于执行需要网络的检测和检查更新。
 - 局域网功能只对已配对设备开放，配对需要用户确认。
 - 接收文件会过滤盘符、`..` 和非法路径字符，避免写到用户选择目录之外。
@@ -129,7 +129,7 @@ Captain Net 是一款面向 Windows 的本地网络诊断与局域网协同工�
 - TCP `45680`：屏幕查看/广播视频流
 - TCP `45681`：屏幕广播的扬声器音频流
 
-如被 Windows 防火墙拦截，请允许 Captain Net 访问专用网络。
+如被 Windows 防火墙拦截，请允许 Captain X 访问专用网络。
 
 ## 开发与构建
 

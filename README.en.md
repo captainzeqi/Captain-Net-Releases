@@ -1,13 +1,13 @@
 <div align="center">
-  <img src="Assets/CaptainNet.png" width="128" alt="Captain Net icon">
-  <h1>Captain Net</h1>
+  <img src="Assets/CaptainX.png" width="128" alt="Captain X icon">
+  <h1>Captain X</h1>
   <p>Local network diagnostics · LAN collaboration · Portable Windows workspace</p>
   <p><a href="README.md">中文</a> · <strong>English</strong></p>
 </div>
 
 <br>
 
-Captain Net is a local Windows network diagnostics and LAN collaboration workspace. It brings IP, DNS, WebRTC, proxy diagnostics, network protection, cross-device keyboard and mouse, file transfer, screen broadcasting, and private LAN chat into one desktop app.
+Captain X is a local Windows network diagnostics and LAN collaboration workspace. It brings IP, DNS, WebRTC, proxy diagnostics, network protection, cross-device keyboard and mouse, file transfer, screen broadcasting, and private LAN chat into one desktop app.
 
 Diagnostics, chat history, device aliases, and transfer history stay on the local device by default. Nothing is uploaded. LAN features are available only to devices the user has explicitly paired.
 
@@ -87,7 +87,7 @@ Each collaboration area has its own entry in the left navigation. Start by disco
 - Send files and folders of any format from the conversation
 - Device aliases are local-only and do not rename the other device
 - Clear one conversation at a time; clearing affects only the local device
-- Chat history is stored under `%AppData%\\CaptainNet\\chat` and never uploaded
+- Chat history is stored under `%AppData%\\CaptainX\\chat` and never uploaded
 
 #### LAN printer
 
@@ -110,14 +110,14 @@ Each collaboration area has its own entry in the left navigation. Start by disco
 - [Latest release](https://github.com/captainzeqi/Captain-Net-Releases/releases/latest)
 - [All releases](https://github.com/captainzeqi/Captain-Net-Releases/releases)
 
-Only a self-contained Windows x64 portable build is published. Captain Net checks for updates and shows a bottom-left **Restart and update now** prompt; it downloads, replaces, and relaunches the app automatically. Manual checking is also available in Settings.
+Only a self-contained Windows x64 portable build is published. Captain X checks for updates and shows a bottom-left **Restart and update now** prompt; it downloads, replaces, and relaunches the app automatically. Manual checking is also available in Settings.
 
 For keyboard/mouse, clipboard, file transfer, screen broadcast, and chat interoperability, keep paired devices on the same version.
 
 ## Privacy and security boundaries
 
-- Diagnostics, chat history, device aliases, and transfer history are stored under `%AppData%\\CaptainNet` on the local device.
-- Captain Net does not upload reports. Internet access is used only for network checks and update checks.
+- Diagnostics, chat history, device aliases, and transfer history are stored under `%AppData%\\CaptainX` on the local device.
+- Captain X does not upload reports. Internet access is used only for network checks and update checks.
 - LAN features are available only to explicitly paired devices, and pairing requires confirmation.
 - Received paths reject drive prefixes, `..`, and invalid filename characters so peers cannot write outside the selected directory.
 - Files are written to a hidden partial tree and only promoted to the original filename after a complete-length check.
@@ -131,7 +131,7 @@ For keyboard/mouse, clipboard, file transfer, screen broadcast, and chat interop
 - TCP `45680`: screen viewing and broadcast video stream
 - TCP `45681`: broadcast speaker audio stream
 
-If Windows Firewall blocks discovery, allow Captain Net on private networks.
+If Windows Firewall blocks discovery, allow Captain X on private networks.
 
 ## Development
 
