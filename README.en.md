@@ -116,6 +116,19 @@ Only a self-contained Windows x64 portable build is published. Captain X checks 
 
 For keyboard/mouse, clipboard, file transfer, screen broadcast, and chat interoperability, keep paired devices on the same version.
 
+## Single instance
+
+LAN features use fixed ports, so two copies of Captain X on one machine — same version or not — always
+fight over them. The second one loses device discovery, transfer and keyboard/mouse, with nothing on
+screen explaining why. Only one instance is therefore allowed to run:
+
+- Launching the same version again brings the running window to the front and exits the new process
+- Launching a newer version asks the running one to quit and takes over
+- Launching an older version brings the running newer window to the front and exits
+- If something outside the app holds a port, the LAN Transfer page names the port and the reason
+
+The arbitration is logged to `%AppData%\CaptainX\instance.log`.
+
 ## Privacy and security boundaries
 
 - Diagnostics, chat history, device aliases, and transfer history are stored under `%AppData%\\CaptainX` on the local device.
