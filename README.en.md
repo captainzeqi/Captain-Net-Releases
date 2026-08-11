@@ -64,6 +64,7 @@ Each collaboration area has its own entry in the left navigation. Start by disco
 - If only viewing was approved, the viewer can request control later and the viewed device is asked again
 - Closing the viewer window, or using **Cancel screen viewing** in the top banner, revokes the grant immediately
 - While a screen is being viewed or broadcast, a banner stays pinned to the top of the viewed device, showing whether audio and control were granted
+- Cross-device screenshots need the same consent: taken directly only when viewing is already approved, otherwise each request is asked separately
 
 #### Screen broadcast
 
