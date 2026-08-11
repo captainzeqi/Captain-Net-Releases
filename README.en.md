@@ -47,6 +47,9 @@ Each collaboration area has its own entry in the left navigation. Start by disco
 - Drag the Canvas layout to sync the physical arrangement across paired devices
 - Sync text, screenshots, images, and copyable file lists between paired devices
 - A cursor watchdog restores the system cursor after unexpected exits or stale control sessions
+- **Audio sync between devices**: each device has its own *share my audio* switch; when on, its speaker output streams live to every paired device, and the others pick it up and play automatically
+- Playback runs a jitter buffer with drift correction, so a network hiccup is caught up rather than accumulating delay
+- A device that is sharing does not play audio from others. Loopback capture records the whole speaker mix, so playing a peer's audio while capturing would send it straight back as echo — sharing and listening are therefore mutually exclusive on one device
 
 #### LAN transfer
 
